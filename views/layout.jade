@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title
+      block title
+    link(rel='stylesheet', href='/auth/css/bootstrap.min.css')
+    style.
+      body { padding-top: 70px }
+    block styles
+
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href="/")
+            block title
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            block nav
+          ul.nav.navbar-nav.navbar-right
+            li: a(href="/logout") logout
+      
+    .container(style="position: relative")
+      .alert.alert-warning#message(style="position: absolute; display: none; z-index: 1000")
+      block header
+      block content
+
+  script(src="/auth/js/jquery.js")
+  script(src="/auth/js/jquery-ui.js")
+  script(src="/auth/js/bootstrap.min.js")
+  block scripts

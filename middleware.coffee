@@ -7,7 +7,7 @@ module.exports = (app, express, options={}) ->
   {dirname, ttl, secret, byPassPaths} = options
   dirname = __dirname unless dirname
   ttl = TTL unless ttl
-  byPassPaths = ACCEPT_PATHS unless byPassPaths
+  byPassPaths = BY_PASS_PATHS unless byPassPaths
 
   auth = new Auth(secret)
 

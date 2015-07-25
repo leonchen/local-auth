@@ -1,21 +1,14 @@
 {
   "name": "local-auth",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "auth by a local passwd file",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/secondspectrum/local-auth.git"
+    "url": "git+https://github.com/leonchen/local-auth.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/secondspectrum/local-auth/issues"
-  },
-  "homepage": "https://github.com/secondspectrum/local-auth#readme",
+  "author": "Leon Chen",
+  "license": "MIT",
   "dependencies": {
     "bluebird": "^2.9.34",
     "coffee-script": "^1.9.3"

@@ -1,6 +1,6 @@
 {
   "name": "local-auth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "auth by a local passwd file",
   "main": "index.js",
   "repository": {

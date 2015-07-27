@@ -1,6 +1,6 @@
 Auth = require "./auth"
 
-BY_PASS_PATHS = /(^\/login|\.(js|css)$)/i
+BY_PASS_PATHS = /(^\/login|\.(js|css|ico|png|jpg|gif|swf)$)/i
 TTL = 86400*1000*2
 
 module.exports = (app, express, options={}) ->

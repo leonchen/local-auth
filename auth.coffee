@@ -27,7 +27,7 @@ class Auth
     .then (content) =>
       for line in content.split("\n")
         [name, pass] = line.split(/\s+/)
-        @users[name] = pass
+        @users[name] = pass if name and pass
       @dataLoaded = true
 
   verifyToken: (username, expire, token) ->

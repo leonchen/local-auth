@@ -11,6 +11,9 @@ npm install local-auth
   ````
   require('local-auth')(app, express, {secret:"<mysecret>", ttl: 86400000})
   ````
+
+  NOTE that you will need app.use(require("cookie-parser")()) before this line.
+
 2. create a .passwd file in the same dir of app.js, with the following content (split username and password by spaces):
 
   ````
